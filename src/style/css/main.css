@@ -1,0 +1,101 @@
+@value largeBP: (min-width: 1100px);
+@value mediumBP: (min-width: 769px) and (max-width: 1099px);
+@value smallBP: (max-width: 768px);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: light;
+  src: url("/fonts/SanFranciscoText-Light.otf"); }
+@font-face {
+  font-family: regular;
+  src: url("/fonts/SanFranciscoText-Regular.otf"); }
+@font-face {
+  font-family: medium;
+  src: url("/fonts/SanFranciscoText-Medium.otf"); }
+@font-face {
+  font-family: bold;
+  src: url("/fonts/SanFranciscoText-Bold.otf"); }
+h1, h2, h3, h4, h5, h6, label, a {
+  font-family: medium;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+p, li, tr, input {
+  font-family: regular;
+  color: black;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+html, body, #root, .content {
+  height: 100%; }
+
+.chatbot {
+  width: calc(100% - 20px);
+  max-width: 590px;
+  margin: auto;
+  padding: 10px; }
+
+.fullscreen_form {
+  position: relative;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px); }
+  .fullscreen_form label, .fullscreen_form input, .fullscreen_form button {
+    display: block; }
+  .fullscreen_form input {
+    width: calc(100% - 15px);
+    margin-top: 3px;
+    padding: 5px 5px;
+    font-size: 12pt; }
+  .fullscreen_form button {
+    border: 1px solid black;
+    color: black;
+    font-size: 12pt;
+    border-radius: 0px; }
+  .fullscreen_form .guidance_text {
+    text-align: center;
+    width: calc(100% - 20px);
+    margin: auto;
+    margin-top: 15px; }
+
+/*# sourceMappingURL=main.css.map */

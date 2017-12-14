@@ -1,0 +1,30 @@
+@font-face {
+    font-family: light;
+    src: url('/fonts/SanFranciscoText-Light.otf');
+}
+
+@font-face {
+    font-family: regular;
+    src: url('/fonts/SanFranciscoText-Regular.otf');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('/fonts/SanFranciscoText-Medium.otf');
+}
+
+@font-face {
+    font-family: bold;
+    src: url('/fonts/SanFranciscoText-Bold.otf');
+}
+
+h1, h2, h3, h4, h5, h6, label, a{
+	font-family: medium;
+	@include sameFontStyleAllSystems();
+}
+
+p, li, tr, input{
+	font-family: regular;
+	color: black;
+	@include sameFontStyleAllSystems();
+}

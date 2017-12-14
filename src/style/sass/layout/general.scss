@@ -1,0 +1,10 @@
+html, body, #root, .content{
+	height: 100%;
+}
+
+.chatbot{
+	width: calc(100% - 20px);
+	max-width: 590px;
+	margin: auto;
+	padding: 10px;
+}
