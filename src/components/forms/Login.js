@@ -36,13 +36,13 @@ class Main extends Component {
 			saving: true,
 			guidance_text: "Rijkregister wordt gecheckt..."
 		})
-		axios.post(`${GlobalVar.serverURL}/browserAction/postRegisterNumber`, querystring.stringify({
+		axios.post(`${GlobalVar.getServerLink()}/browserAction/postRegisterNumber`, querystring.stringify({
 			registration_number,
 			facebook_id: this.props.match.params.facebook_id
 	  })).then((response) => {
 	    if(response.data.status === "succes"){
 				this.setState({guidance_text: "Alles in orde"})
-				
+
 			}
 	  });
 	}
