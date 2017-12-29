@@ -48,6 +48,7 @@ class Main extends Component {
 	}
 
 	render() {
+		console.log(`${GlobalVar.getServerLink()}/browserAction/postRegisterNumber`);
 		return (
     		<form className="chatbot fullscreen_form login">
     			<label>Rijkregister nummer</label>
