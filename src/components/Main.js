@@ -7,9 +7,9 @@ class Main extends Component {
     render() {
     	return (
     		<div className="content">
-    			<Route path="/forms/login" render={() => <Login/>}/>
+    			<Route path="/forms/login/:facebook_id" component={Login} />
     		</div>
-		);
+		  );
     }
 }
 
