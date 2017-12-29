@@ -41,7 +41,14 @@ class Main extends Component {
 			facebook_id: this.props.match.params.facebook_id
 	  })).then((response) => {
 	    if(response.data.status === "succes"){
-				this.setState({guidance_text: "Alles in orde"})
+				this.setState({guidance_text: "Alles in orde"});
+
+				axios.post(`${GlobalVar.getServerLink()}/bot/login`, querystring.stringify({
+					sender: this.props.match.params.facebook_id
+				})).then((response) => {
+					console.log(response);
+				});
+
 				GlobalVar.closeBrowser();
 			}
 	  });
