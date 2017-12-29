@@ -42,13 +42,12 @@ class Main extends Component {
 	  })).then((response) => {
 	    if(response.data.status === "succes"){
 				this.setState({guidance_text: "Alles in orde"})
-
+				GlobalVar.closeBrowser();
 			}
 	  });
 	}
 
 	render() {
-		console.log(`${GlobalVar.getServerLink()}/browserAction/postRegisterNumber`);
 		return (
     		<form className="chatbot fullscreen_form login">
     			<label>Rijkregister nummer</label>
